@@ -4,8 +4,8 @@ use core::convert::TryFrom;
 use core::iter::ExactSizeIterator;
 use core::num::{NonZeroU32, NonZeroU64};
 use core::ops::Range;
-use core::sync::atomic::{AtomicIsize, Ordering};
 use core::{fmt, mem};
+use portable_atomic::{AtomicIsize, Ordering};
 #[cfg(feature = "std")]
 use std::error::Error;
 
